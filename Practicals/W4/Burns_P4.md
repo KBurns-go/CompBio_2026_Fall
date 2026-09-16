@@ -21,3 +21,9 @@ animal = "My favorite animals: Frogs and Beluga whales"
 #I'm using sep='\n' to tell the print command to start a new line after each input variable
 print(name, color, activity, animal, sep='\n')
 ```
+Ran code on terminal: 
+```python
+$ python about_me.py
+```
+## 6.2 Codon to Amino Acid
+
