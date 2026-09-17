@@ -3,12 +3,12 @@
 ### 5.1 Markdown Homework
 
 Code to synchronize local and remote repositories:
-```
-#Navigate on git bash to repository want to synchronize
+```bash
+# Navigate on git bash to repository want to synchronize
 
 $ cd CompBio_2026_Fall/Practicals/
 
-#Synchronize from remote (git hub) to local (git bash on my comp)
+# Synchronize from remote (git hub) to local (git bash on my comp)
 
 $ git pull origin main
 ```
@@ -17,13 +17,13 @@ $ git pull origin main
 ### 5.2 Semicolon-dilimted to comma-delimited
 
 The code I had on notepad++ already did this, which was: 
-```
-#Script to convert ";" delimited file to "," delimited file
+```bash
+# Script to convert ";" delimited file to "," delimited file
 
-#The first argument is the file to be converted, to be used as: 
-#bash comconv.bash file.csv
+# The first argument is the file to be converted, to be used as: 
+# $ bash comconv.bash file.csv
 
-#calling first argument, piping to translate ; to , and then save it to NAME after the >
+# calling first argument, piping to translate ; to , and then save it to NAME after the >
 
 cat $1 | tr ";" "," > "$1"_conv.csv
 ```
