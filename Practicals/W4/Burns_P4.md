@@ -37,3 +37,4 @@ My favorite animals: Frogs and Beluga whales
 
 ## 6.2 Codon to Amino Acid
 
+#### Please see attached Jupyter notebook file saved within this Wk 4 Practicals folder :)
