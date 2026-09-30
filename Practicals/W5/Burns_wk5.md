@@ -69,17 +69,21 @@ END
 Python program actual code:
 
 ```Python
+# Set number to 1
 x = 1
+
+# Establish where the code should stop
+
 while x < 101:
-x = x + 1
-if x % 3 == 0:
-  print(x, "fizz")
-elif x % 5 == 0:
-  print(x, "buzz")
-elif x % 3 == 0 and x % 5 == 0:
-  print(x, "fizzbuzz")
-else:
-  print(x)
+  if x % 3 == 0 and x % 5 == 0:
+    print(x, "fizzbuzz")  #If number is divisible by 3 AND 5, print number + "fizzbuzz"
+  elif x % 3 == 0:
+    print(x, "fizz")  #If number is divisible by only 3, print number + "fizz"
+  elif x % 5 == 0:
+    print(x, "buzz") # If number is divisible by only 5, print number + "buzz" 
+  else:
+    print(x) # When no if statements are true, print only the number 
+  x = x + 1  # Putting this at the end and indented with the if statements keeps this code from running and infiinitely printing 1, but indentation matters so that the program doesn't start with "2" instead of 1 
 ```
 
 
