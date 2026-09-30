@@ -2,18 +2,40 @@
 
 ### 4.1 Baking a Cake
 
-Input cake ingredients, time, oven temperature 
+```Python
 
-done = knife clean
-not_done = knife has batter
+Ingredients = flour, eggs, milk, butter, sugar
+Gather cake ingredients.
 
-If not_done
-  return to oven
-  continue with less time
-  check again 
-else 
-  break
-  turn oven off
+Preheat oven to 400F
+
+Mix ingredients together. 
+
+Pour batter into an oven pan. 
+
+Put pan into oven. 
+
+Bake for 20min. 
+
+While cake = not done:
+  Remove cake from oven. 
+
+  Insert knife into cake
+
+  if knife = clean THEN
+    cake = done
+  else 
+    Put cake back in oven. 
+    Bake 5 minutes more. 
+  break if
+break while
+
+Remove cake from oven to cool
+
+Turn oven off
+
+End
+```
   
 ### 4.2 Fizz Buzz
 
