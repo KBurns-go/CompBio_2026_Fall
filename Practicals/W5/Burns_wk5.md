@@ -39,9 +39,36 @@ End
   
 ### 4.2 Fizz Buzz
 
-#### Part 1
+#### Part 1: Psuedocode
+
+Fizz, buzz division game
+```Python
+Set number equal to 1
+
+while number is less than or equal to ending number desired:
+
+  If ending number is divisible by both 3 AND 5
+    then "fizzbuzz"
+
+  else if ending number is divisible by 3
+    then "fizz"
+
+  else if ending number is divisible by 5
+    then "buzz"
+
+  else
+    print ending number
+
+break while
+
+END
+```
 
 #### Part 2
+
+Python program actual code:
+
+```Python
 x = 1
 while x < 101:
 x = x + 1
@@ -49,7 +76,11 @@ if x % 3 == 0:
   print(x, "fizz")
 elif x % 5 == 0:
   print(x, "buzz")
-* We know up until here works, need to figure out how to do for both and print all numbers
+elif x % 3 == 0 and x % 5 == 0:
+  print(x, "fizzbuzz")
+else:
+  print(x)
+```
 
 
 ### 4.3 GC content from fasta
