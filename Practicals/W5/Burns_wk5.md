@@ -88,3 +88,22 @@ while x < 101:
 
 
 ### 4.3 GC content from fasta
+
+Assuming we were supposed to write this as a loop still:
+```Python
+# open file to be read and give it an output file
+with open ("C:/Users/mknbu/IntroBiolComp-2026/Python/DataFiles/Turkey_transcripts_15.fasta", "r") as infile, open("gc_content.txt", "w") as outfile:
+
+  for line in infile:
+    line = line.rstrip() # Remove new lines
+
+    if line.startswith(">"):  # Specifically checks for the headers within the fasta file
+      gene_id = line.split()[0][1:]   # Takes info after > and breaks at each space, taking info before first space
+      seq = next(infile).rstrip()  # Takes the next line in the file and makes it seq
+
+      gc = (seq.count("G") + seq.count("C")) / len(seq)  # Calculates the Gs+Cs content of each seq
+
+      outfile.write(gene_id + "\t" + str(gc) + "\n")  # Writes the calculated GC content for each name, separated by tabs
+```
+
+See gc_content.txt in my W5 folder for result
