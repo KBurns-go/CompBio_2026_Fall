@@ -36,7 +36,9 @@ Turn oven off
 
 End
 ```
-  
+>[!NOTE]
+>Great!
+
 ### 4.2 Fizz Buzz
 
 #### Part 1: Psuedocode
@@ -85,7 +87,8 @@ while x < 101:
     print(x) # When no if statements are true, print only the number 
   x = x + 1  # Putting this at the end and indented with the if statements keeps this code from running and infiinitely printing 1, but indentation matters so that the program doesn't start with "2" instead of 1 
 ```
-
+>[!NOTE]
+>Great
 
 ### 4.3 GC content from fasta
 
@@ -107,3 +110,6 @@ with open ("C:/Users/mknbu/IntroBiolComp-2026/Python/DataFiles/Turkey_transcript
 ```
 
 See gc_content.txt in my W5 folder for result
+
+>[!NOTE]
+>Looks good!
